@@ -1,0 +1,121 @@
+/*
+Font for Yangtze Lectures
+Credit:
+https://www.dafont.com/deborstel-brush.font?text=Yangtze+Lectures
+http://www.diqibu.com/font/2454.html
+*/
+
+@font-face {
+  font-family: 'yangtze-lectures';
+  src:  url('fonts/yangtze-lectures.eot?l7mvfd');
+  src:  url('fonts/yangtze-lectures.eot?l7mvfd#iefix') format('embedded-opentype'),
+    url('fonts/yangtze-lectures.ttf?l7mvfd') format('truetype'),
+    url('fonts/yangtze-lectures.woff?l7mvfd') format('woff'),
+    url('fonts/yangtze-lectures.svg?l7mvfd#yangtze-lectures') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.font-yl, [class^="yl-"], [class*=" yl-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'yangtze-lectures' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yl-G:before {
+  content: "\47";
+}
+.yl-L:before {
+  content: "\4c";
+}
+.yl-N:before {
+  content: "\4e";
+}
+.yl-R:before {
+  content: "\52";
+}
+.yl-S:before {
+  content: "\53";
+}
+.yl-T:before {
+  content: "\54";
+}
+.yl-U:before {
+  content: "\55";
+}
+.yl-Y:before {
+  content: "\59";
+}
+.yl-Z:before {
+  content: "\5a";
+}
+.yl-A:before {
+  content: "\41";
+}
+.yl-a:before {
+  content: "\61";
+}
+.yl-c:before {
+  content: "\63";
+}
+.yl-e:before {
+  content: "\65";
+}
+.yl-g:before {
+  content: "\67";
+}
+.yl-n:before {
+  content: "\6e";
+}
+.yl-r:before {
+  content: "\72";
+}
+.yl-s:before {
+  content: "\73";
+}
+.yl-t:before {
+  content: "\74";
+}
+.yl-u:before {
+  content: "\75";
+}
+.yl-y:before {
+  content: "\79";
+}
+.yl-z:before {
+  content: "\7a";
+}
+.yl-l:before {
+  content: "\6c";
+}
+.yl-C:before {
+  content: "\43";
+}
+.yl-E:before {
+  content: "\45";
+}
+.yl-uni5802:before {
+  content: "\5802";
+}
+.yl-uni5927:before {
+  content: "\5927";
+}
+.yl-uni6C5F:before {
+  content: "\6c5f";
+}
+.yl-uni8BB2:before {
+  content: "\8bb2";
+}
+.yl-uni957F:before {
+  content: "\957f";
+}
