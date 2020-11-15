@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Typewriter Demo Page</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<style>
+body {
+	font-family: 'Quicksand', serif;
+	background-color: #272B2E;
+	color: #FFF;
+}
+
+#typewriter-prefix {
+	color: #CC6633;
+}
+.container { margin:150px auto; text-align:center; max-width:600px;}
+h2 { margin-bottom:150px; font-family:'Open Sans'; color:#fafafa;}
+</style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/animation/Terminal-style-Text-Typing-Plugin-jQuery-Typewriter.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h2>jQuery Typewriter</h1>
+<h1 id="typewriter"></h1>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/estds/cdn-res/jquery/3.5.1/jquery-3.5.1.min.js"></script>
+<script src="jquery.typewriter.min.js"></script>
+<script>
+$('#typewriter').typewriter({
+	prefix : "# ",
+	text : ["Hey, this looks cool, right ?", "This keeps looping again and again.", "Wanna use this cool plugin ?", "See below given usage instructions."],
+	typeDelay : 50,
+	waitingTime : 1500,
+	blinkSpeed : 200
+});
+</script>
+</body>
+</html>
