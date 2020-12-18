@@ -93,6 +93,11 @@
     background-color: rgba(0,0,0,0) !important;
     color: #ffffff;
     font-size: 17px
+    text-shadow: 0 0 6px #006064;
+}
+
+.video-js.vjs-yicodeplayer .vjs-button>.vjs-icon-placeholder:before {
+    text-shadow: 0 0 6px #006064;
 }
 
 .video-js.vjs-yicodeplayer .vjs-play-progress,.video-js.vjs-yicodeplayer  .vjs-volume-level {
