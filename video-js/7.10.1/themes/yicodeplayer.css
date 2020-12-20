@@ -96,7 +96,7 @@
 .video-js.vjs-yicodeplayer .vjs-control-bar {
     background-color: rgba(0,0,0,0) !important;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 10px;
     text-shadow: 0 0 6px #006064;
 }
 
@@ -161,6 +161,17 @@
 .vjs-remaining-time {
   display: none;
 }
+.video-js.vjs-yicodeplayer.vjs-fullscreen .vjs-tech {
+  object-fit: contain;
+}
+.vjs-wrap .vjs-video-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.vjs-wrap .vjs-video-info .full-info {
+  font-size: .75rem;
+}
 .vjs-quality-selector .vjs-icon-placeholder::before {
   font-family: VideoJS;
   font-weight: normal;
@@ -173,4 +184,14 @@
 }
 .vjs-quality-selector .vjs-menu li {
   text-transform: uppercase;
+}
+@media only screen and (min-width: 576px) {
+  .video-js.vjs-yicodeplayer .vjs-control-bar {
+      font-size: 12px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .video-js.vjs-yicodeplayer .vjs-control-bar {
+      font-size: 16px;
+  }
 }
