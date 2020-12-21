@@ -161,6 +161,19 @@
 .vjs-remaining-time {
   display: none;
 }
+.video-js.vjs-yicodeplayer.vjs-fullscreen .vjs-tech {
+  object-fit: contain;
+}
+.vjs-wrap .vjs-video-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.vjs-wrap .vjs-video-info .full-info {
+  font-size: .75rem;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
+}
 .vjs-quality-selector .vjs-icon-placeholder::before {
   font-family: VideoJS;
   font-weight: normal;
