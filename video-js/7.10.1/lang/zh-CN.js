@@ -1,4 +1,5 @@
 videojs.addLanguage('zh-CN', {
+  "Quality": "质量",
   "Play": "播放",
   "Pause": "暂停",
   "Current Time": "当前时间",
