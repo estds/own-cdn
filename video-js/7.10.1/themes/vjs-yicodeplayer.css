@@ -145,6 +145,7 @@
 
 .video-js, .video-js.vjs-yicodeplayer video, .vjs-poster, .video-js.vjs-yicodeplayer .vjs-tech {
     /* border-radius: 8px; */
+    outline: none;
 }
 
 .video-js.vjs-yicodeplayer .vjs-current-time,
@@ -171,6 +172,8 @@
 }
 .vjs-wrap .vjs-video-info .full-info {
   font-size: .75rem;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
 }
 .vjs-quality-selector .vjs-icon-placeholder::before {
   font-family: VideoJS;
