@@ -11,3 +11,4 @@ i.fa {font-style: unset;}
 .header-navigation .sub-nav-toggler .icon-bar:last-child {display: none;}
 .header-navigation .sub-nav-toggler .icon-bar:nth-child(2) {transform: rotate(90deg) translateX(4px);}
 .blog-details .block-title__title {margin-bottom: 1.2rem;}
+.blog-details .subBox .row {padding-top: 1rem;}
