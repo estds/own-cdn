@@ -1,0 +1,12 @@
+body {font-family: 'Lato',Helvetica,Arial,sans-serif;}
+i.fa {font-style: unset;}
+.site-footer__lower {display: none;}
+.main-navigation {background-color:transparent!important;}
+.header-navigation ul.navigation-box>li,
+.header-navigation ul.navigation-box>li>.sub-menu>li {padding:0!important}
+.header-navigation ul.navigation-box>li>a{padding:24px 36px!important;display:block;}
+.header-navigation ul.navigation-box>li>.sub-menu>li>a {padding:18px 36px!important;min-width:16em;}
+.header-navigation ul.navigation-box>li>.sub-menu {width:auto!important;min-width:auto!important;}
+.header-navigation ul.navigation-box li a .sub-nav-toggler {border: 0;}
+.header-navigation .sub-nav-toggler .icon-bar:last-child {display: none;}
+.header-navigation .sub-nav-toggler .icon-bar:nth-child(2) {transform: rotate(90deg) translateX(4px);}
