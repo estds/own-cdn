@@ -1,5 +1,6 @@
 body {font-family: 'Lato',Helvetica,Arial,sans-serif;color:#333;}
 i.fa {font-style: unset;}
+figcaption {line-height: 150%;margin-top: 0;}
 .site-footer__lower {display: none;}
 .main-navigation {background-color:transparent!important;}
 .header-navigation ul.navigation-box>li,
