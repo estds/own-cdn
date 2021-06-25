@@ -15,3 +15,39 @@ figcaption {line-height: 150%;margin-top: 0;}
 .header-navigation .sub-nav-toggler .icon-bar:nth-child(2) {transform: rotate(90deg) translateX(4px);}
 .blog-details .block-title__title {margin-bottom: 1.2rem;}
 .blog-details.subBox .row {padding-top: 1rem;}
+
+.blog-details h1, .blog-details h2, .blog-details h3, .blog-details h4, .blog-details h5, .blog-details h6, .blog-details
+.h1, .blog-details .h2, .blog-details .h3, .blog-details .h4, .blog-details .h5, .blog-details .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.blog-details h1, .blog-details .h1 {
+  font-size: 2.5rem;
+}
+
+.blog-details h2, .blog-details .h2 {
+  font-size: 2rem;
+}
+
+.blog-details h3, .blog-details .h3 {
+  font-size: 1.75rem;
+}
+
+.blog-details h4, .blog-details .h4 {
+  font-size: 1.5rem;
+}
+
+.blog-details h5, .blog-details .h5 {
+  font-size: 1.25rem;
+}
+
+.blog-details h6, .blog-details .h6 {
+  font-size: 1rem;
+}
+
+.blog-details .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
