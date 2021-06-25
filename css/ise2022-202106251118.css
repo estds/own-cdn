@@ -15,6 +15,8 @@ figcaption {line-height: 150%;margin-top: 0;}
 .header-navigation .sub-nav-toggler .icon-bar:nth-child(2) {transform: rotate(90deg) translateX(4px);}
 .blog-details .block-title__title {margin-bottom: 1.2rem;}
 .blog-details.subBox .row {padding-top: 1rem;}
+.newsList.cta-two h2.block-title__title {text-align: center;}
+
 .blog-details .default-eidt h1, .blog-details .default-eidt h2, .blog-details .default-eidt h3, .blog-details .default-eidt h4, .blog-details .default-eidt h5, .blog-details .default-eidt h6, .blog-details .default-eidt
 .h1, .blog-details .default-eidt .h2, .blog-details .default-eidt .h3, .blog-details .default-eidt .h4, .blog-details .default-eidt .h5, .blog-details .default-eidt .h6 {
   margin-bottom: 0.5rem;
