@@ -52,3 +52,17 @@ figcaption {line-height: 150%;margin-top: 0;}
   font-size: 1.25rem;
   font-weight: 300;
 }
+
+.list-group.list-group-flush .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    padding: 1.5rem 0;
+}
+
+.list-group.list-group-flush .list-group-item:first-child {
+    border-top: 0
+}
+
+.list-group.list-group-flush .list-group-item:last-child {
+    border-bottom: 0
+}
