@@ -127,3 +127,7 @@ figcaption {
     border-radius: 50%;
     max-width: 9rem;
 }
+
+.testimonials-one__content .testimonials-one__sep {
+    display: none;
+}
