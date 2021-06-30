@@ -132,10 +132,10 @@ figcaption {
     display: none;
 }
 
-.testimonials-one__content .testimonials-one__text {
+.testimonials-one__content .testimonials-one__single {
     color: #fff;
 }
 
-.testimonials-one__content .testimonials-one__text a {
+.testimonials-one__content .testimonials-one__single a {
     color: rgb(238, 187, 77);
 }
