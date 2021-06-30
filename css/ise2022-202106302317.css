@@ -131,3 +131,11 @@ figcaption {
 .testimonials-one__content .testimonials-one__sep {
     display: none;
 }
+
+.testimonials-one__content .testimonials-one__text {
+    color: #fff;
+}
+
+.testimonials-one__content .testimonials-one__text a {
+    color: rgb(238, 187, 77);
+}
