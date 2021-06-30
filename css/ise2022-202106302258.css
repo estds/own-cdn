@@ -66,3 +66,5 @@ figcaption {line-height: 150%;margin-top: 0;}
 .list-group.list-group-flush .list-group-item:last-child {
     border-bottom: 0
 }
+
+.media img.avatar {width:64px;height:64px;border-radius:50%;max-width:64px;}
