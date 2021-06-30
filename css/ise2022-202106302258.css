@@ -1,56 +1,110 @@
-body {font-family: 'Lato',Helvetica,Arial,sans-serif;color:#333;}
-.list-unstyled, .list-unstyled li { list-style-type: none!important;}
-i.fa {font-style: unset;}
-figcaption {line-height: 150%;margin-top: 0;}
-.blog-details p, .blog-details figure {margin-bottom: 1rem;}
-.site-footer__lower {display: none;}
-.main-navigation {background-color:transparent!important;}
-.header-navigation ul.navigation-box>li,
-.header-navigation ul.navigation-box>li>.sub-menu>li {padding:0!important}
-.header-navigation ul.navigation-box>li>a{padding:24px 36px!important;display:block;}
-.header-navigation ul.navigation-box>li>.sub-menu>li>a {padding:18px 36px!important;min-width:16em;}
-.header-navigation ul.navigation-box>li>.sub-menu {width:auto!important;min-width:auto!important;}
-.header-navigation ul.navigation-box li a .sub-nav-toggler {border: 0;}
-.header-navigation .sub-nav-toggler .icon-bar:last-child {display: none;}
-.header-navigation .sub-nav-toggler .icon-bar:nth-child(2) {transform: rotate(90deg) translateX(4px);}
-.blog-details .block-title__title {margin-bottom: 1.2rem;}
-.blog-details.subBox .row {padding-top: 1rem;}
-.newsList.cta-two h2.block-title__title {text-align: center;}
+body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.list-unstyled, .list-unstyled li {
+    list-style-type: none !important;
+}
+
+i.fa {
+    font-style: unset;
+}
+
+figcaption {
+    line-height: 150%;
+    margin-top: 0;
+}
+
+.blog-details p, .blog-details figure {
+    margin-bottom: 1rem;
+}
+
+.site-footer__lower {
+    display: none;
+}
+
+.main-navigation {
+    background-color: transparent !important;
+}
+
+.header-navigation ul.navigation-box > li, .header-navigation ul.navigation-box > li > .sub-menu > li {
+    padding: 0 !important
+}
+
+.header-navigation ul.navigation-box > li > a {
+    padding: 24px 36px !important;
+    display: block;
+}
+
+.header-navigation ul.navigation-box > li > .sub-menu > li > a {
+    padding: 18px 36px !important;
+    min-width: 16em;
+}
+
+.header-navigation ul.navigation-box > li > .sub-menu {
+    width: auto !important;
+    min-width: auto !important;
+}
+
+.header-navigation ul.navigation-box li a .sub-nav-toggler {
+    border: 0;
+}
+
+.header-navigation .sub-nav-toggler .icon-bar:last-child {
+    display: none;
+}
+
+.header-navigation .sub-nav-toggler .icon-bar:nth-child(2) {
+    transform: rotate(90deg) translateX(4px);
+}
+
+.blog-details .block-title__title {
+    margin-bottom: 1.2rem;
+}
+
+.blog-details.subBox .row {
+    padding-top: 1rem;
+}
+
+.newsList.cta-two h2.block-title__title {
+    text-align: center;
+}
 
 .blog-details .default-eidt h1, .blog-details .default-eidt h2, .blog-details .default-eidt h3, .blog-details .default-eidt h4, .blog-details .default-eidt h5, .blog-details .default-eidt h6, .blog-details .default-eidt
 .h1, .blog-details .default-eidt .h2, .blog-details .default-eidt .h3, .blog-details .default-eidt .h4, .blog-details .default-eidt .h5, .blog-details .default-eidt .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .blog-details .default-eidt h1, .blog-details .default-eidt .h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .blog-details .default-eidt h2, .blog-details .default-eidt .h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .blog-details .default-eidt h3, .blog-details .default-eidt .h3 {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 .blog-details .default-eidt h4, .blog-details .default-eidt .h4 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .blog-details .default-eidt h5, .blog-details .default-eidt .h5 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .blog-details .default-eidt h6, .blog-details .default-eidt .h6 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .blog-details .default-eidt .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .list-group.list-group-flush .list-group-item {
@@ -67,4 +121,9 @@ figcaption {line-height: 150%;margin-top: 0;}
     border-bottom: 0
 }
 
-.media img.avatar {width:64px;height:64px;border-radius:50%;max-width:64px;}
+.media img.avatar {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    max-width: 9rem;
+}
