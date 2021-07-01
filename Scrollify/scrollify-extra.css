@@ -5,14 +5,14 @@
 
 .slf-slide .slide-in-left {
   transform: translateX(-100%);
-  -webkit-transition: top 1.1s ease;
-  transition: top 1.1s ease;
+  -webkit-transition: all 1.1s ease;
+  transition: all 1.1s ease;
 }
 
 .slf-slide .slide-in-right {
   transform: translateX(100%);
-  -webkit-transition: top 1.1s ease;
-  transition: top 1.1s ease;
+  -webkit-transition: all 1.1s ease;
+  transition: all 1.1s ease;
 }
 
 .slf-slide .slide-in-left.moved,
