@@ -1,5 +1,5 @@
 $('.carousel-multiple').carousel({
-    interval: 250000
+    interval: 5000
 })
 
 $('.carousel.carousel-multiple .carousel-item').each(function(){
