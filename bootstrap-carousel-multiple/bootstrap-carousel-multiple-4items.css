@@ -1,0 +1,54 @@
+.carousel-multiple .carousel-inner .carousel-item.active,
+.carousel-multiple .carousel-inner .carousel-item-next,
+.carousel-multiple .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-multiple .carousel-inner .carousel-item-right.active,
+.carousel-multiple .carousel-inner .carousel-item-next {
+  transform: translateX(100%);
+}
+
+.carousel-multiple .carousel-inner .carousel-item-left.active,
+.carousel-multiple .carousel-inner .carousel-item-prev {
+  transform: translateX(-100%);
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .carousel-multiple .carousel-inner .carousel-item-right.active,
+  .carousel-multiple .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+
+  .carousel-multiple .carousel-inner .carousel-item-left.active,
+  .carousel-multiple .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .carousel-multiple .carousel-inner .carousel-item-right.active,
+  .carousel-multiple .carousel-inner .carousel-item-next {
+    transform: translateX(33.33%);
+  }
+
+  .carousel-multiple .carousel-inner .carousel-item-left.active,
+  .carousel-multiple .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.33%);
+  }
+}
+
+@media (min-width: 992px) {
+
+  .carousel-multiple .carousel-inner .carousel-item-right.active,
+  .carousel-multiple .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-multiple .carousel-inner .carousel-item-left.active,
+  .carousel-multiple .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
