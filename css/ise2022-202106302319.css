@@ -3,6 +3,10 @@ body {
     color: #333;
 }
 
+.nav-log a {
+    background-color: transparent;
+}
+
 .list-unstyled, .list-unstyled li {
     list-style-type: none !important;
 }
