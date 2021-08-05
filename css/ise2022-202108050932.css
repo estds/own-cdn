@@ -77,7 +77,7 @@ figcaption {
 
 .blog-details .default-eidt h1, .blog-details .default-eidt h2, .blog-details .default-eidt h3, .blog-details .default-eidt h4, .blog-details .default-eidt h5, .blog-details .default-eidt h6, .blog-details .default-eidt
 .h1, .blog-details .default-eidt .h2, .blog-details .default-eidt .h3, .blog-details .default-eidt .h4, .blog-details .default-eidt .h5, .blog-details .default-eidt .h6 {
-    margin-bottom: 0.5rem;
+    margin: 1em 0;
     font-weight: 500;
     line-height: 1.2;
 }
