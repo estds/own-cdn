@@ -75,6 +75,17 @@ figcaption {
     text-align: center;
 }
 
+.blog-details .default-eidt ol,
+.blog-details .default-eidt ul {
+    padding-inline-start: 1em;
+    list-style-position: outside;
+}
+
+.blog-details .default-eidt ol li,
+.blog-details .default-eidt ul li {
+    list-style-position: outside;
+}
+
 .blog-details .default-eidt h1, .blog-details .default-eidt h2, .blog-details .default-eidt h3, .blog-details .default-eidt h4, .blog-details .default-eidt h5, .blog-details .default-eidt h6, .blog-details .default-eidt
 .h1, .blog-details .default-eidt .h2, .blog-details .default-eidt .h3, .blog-details .default-eidt .h4, .blog-details .default-eidt .h5, .blog-details .default-eidt .h6 {
     margin: 1em 0;
