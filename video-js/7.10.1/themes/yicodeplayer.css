@@ -169,6 +169,10 @@
   position: absolute;
   right: 0;
   top: 0;
+  margin: 0;
+}
+.vjs-wrap .vjs-video-info:before {
+  display: none;
 }
 .vjs-wrap .vjs-video-info .full-info {
   font-size: .75rem;
