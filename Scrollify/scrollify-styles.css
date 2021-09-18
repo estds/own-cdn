@@ -5,11 +5,9 @@
 
 .slf-pagination {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: 20px;
-  height: 90px;
-  margin: auto;
   z-index: 999;
 }
 
