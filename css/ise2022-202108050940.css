@@ -77,7 +77,7 @@ figcaption {
 
 .blog-details .default-eidt ol,
 .blog-details .default-eidt ul {
-    padding-inline-start: 1em;
+    padding-inline-start: 1.75em;
     list-style-position: outside;
 }
 
@@ -99,6 +99,8 @@ figcaption {
 
 .blog-details .default-eidt h2, .blog-details .default-eidt .h2 {
     font-size: 2rem;
+    color: #3c5aad;
+    font-weight: 800;
 }
 
 .blog-details .default-eidt h3, .blog-details .default-eidt .h3 {
