@@ -67,6 +67,6 @@ var vjsPlaylists = document.getElementsByClassName('vjs-playlist');
 for (var i = 0; i < vjsPlaylists.length; i++) {
   let firstAvailableEP = vjsPlaylists[i].querySelector('[data-code="200"]');
   if (firstAvailableEP) {
-    firstAvailableEP.click();
+    vjsPickEpisode(firstAvailableEP);
   }
 }
