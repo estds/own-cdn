@@ -192,6 +192,31 @@
 .vjs-quality-selector .vjs-menu li {
   text-transform: uppercase;
 }
+
+.episode-list-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.episode-list-wrap .episode-item {
+  padding: 18px 30px;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.episode-list-wrap .episode-item.current-item::after {
+  position: absolute;
+  left: 3px;
+  top: 0;
+  color: orange;
+  content: "\f111";
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media only screen and (min-width: 576px) {
   .video-js.vjs-yicodeplayer .vjs-control-bar {
       font-size: 12px;
