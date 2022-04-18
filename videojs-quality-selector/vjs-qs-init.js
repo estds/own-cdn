@@ -23,7 +23,6 @@ Array.prototype.forEach.call(vjsplayers, function(el) {
   });
 });
 
-
 // pick episodes from list
 function vjsPickEpisode(d) {
   let cover = d.getAttribute("data-cover");
@@ -35,16 +34,23 @@ function vjsPickEpisode(d) {
   let srcDes = d.getAttribute("data-des");
   let srcID = d.getAttribute("data-vid");
 
-  d.parentNode.querySelector('.current-item').classList.remove('current-item', 'disabled');
+  let curEp = d.parentNode.querySelector('.current-item');
+  if (curEp) {
+    curEp.classList.remove('current-item', 'disabled');
+  }
   d.classList.add('disabled', 'current-item');
 
   let espList = d.closest('.episode-list-wrap');
   let vjsWrap = espList.parentNode;
   let vidFrame = espList.parentNode.querySelector('video');
-  let vjsPlayer = videojs(vidFrame);
+  if (vidFrame) {
+    let vjsPlayer = videojs(vidFrame);
+    vjsPlayer.dispose(); //destroy vjs player in use
+  }
+
   let vidDes = espList.parentNode.querySelector('figcaption #vid-des');
   vidDes.innerHTML = srcDes;
-  vjsPlayer.dispose(); //destroy vjs player in use
+
   let newVid = document.createElement('div');
   newVid.innerHTML = '<video id="vjs-player-' + srcID + '" class="video-js vjs-yicodeplayer vjs-multiple-quality vjs-fluid" controls playsinline preload="auto" poster="' + cover + '" data-setup="{}"><source src="' + srcSD + '" type="video/mp4" label="' + resLang.sd + '" /><source src="' + srcHD + '" type="video/mp4" label="' + resLang.hd + '" selected="true" /><source src="' + srcUHD + '" type="video/mp4" label="' + resLang.uhd + '" /></video>';
   newVid = newVid.firstChild;
@@ -54,4 +60,13 @@ function vjsPickEpisode(d) {
     var player = this;
     player.controlBar.addChild('QualitySelector');
   });
+}
+
+// Pop the first available episode available
+var vjsPlaylists = document.getElementsByClassName('vjs-playlist');
+for (var i = 0; i < vjsPlaylists.length; i++) {
+  let firstAvailableEP = vjsPlaylists[i].querySelector('[data-code="200"]');
+  if (firstAvailableEP) {
+    firstAvailableEP.click();
+  }
 }
