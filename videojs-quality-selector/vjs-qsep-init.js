@@ -33,6 +33,7 @@ function vjsPickEpisode(d) {
   let srcH = d.getAttribute("data-height");
   let srcDes = d.getAttribute("data-des");
   let srcID = d.getAttribute("data-vid");
+  let isPlaying = false;
 
   let curEp = d.parentNode.querySelector('.current-item');
   if (curEp) {
@@ -45,6 +46,9 @@ function vjsPickEpisode(d) {
   let vidFrame = espList.parentNode.querySelector('video');
   if (vidFrame) {
     let vjsPlayer = videojs(vidFrame);
+    if (!vjsPlayer.paused()) {
+      isPlaying = true;
+    }
     vjsPlayer.dispose(); //destroy vjs player in use
   }
 
@@ -52,11 +56,22 @@ function vjsPickEpisode(d) {
   vidDes.innerHTML = srcDes;
 
   let newVid = document.createElement('div');
-  newVid.innerHTML = '<video id="vjs-player-' + srcID + '" class="video-js vjs-yicodeplayer vjs-multiple-quality vjs-fluid" controls playsinline preload="auto" poster="' + cover + '" data-setup="{}"><source src="' + srcSD + '" type="video/mp4" label="' + resLang.sd + '" /><source src="' + srcHD + '" type="video/mp4" label="' + resLang.hd + '" selected="true" /><source src="' + srcUHD + '" type="video/mp4" label="' + resLang.uhd + '" /></video>';
+  let html = '<video id="vjs-player-' + srcID + '" class="video-js vjs-yicodeplayer vjs-multiple-quality vjs-fluid" controls playsinline preload="auto" poster="' + cover + '" data-setup="{}">';
+  if (srcHD.length == 0) {
+    html += '<source src="' + srcSD + '" type="video/mp4" label="' + resLang.sd + '" selected="true"/>';
+  } else {
+    html += '<source src="' + srcSD + '" type="video/mp4" label="' + resLang.sd + '" selected="false"/><source src="' + srcHD + '" type="video/mp4" label="' + resLang.hd + '" selected="true" />';
+  }
+    if (srcUHD.length > 0) {
+    html += '<source src="' + srcUHD + '" type="video/mp4" label="' + resLang.uhd + '" selected="false"/>';
+    }
+  newVid.innerHTML = html+'</video>';
   newVid = newVid.firstChild;
   vjsWrap.prepend(newVid);
   var newVJS = vjsWrap.querySelector('video');
-  videojs(newVJS, {}, function() {
+  videojs(newVJS, {
+    autoplay: isPlaying
+  }, function() {
     var player = this;
     player.controlBar.addChild('QualitySelector');
   });
