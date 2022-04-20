@@ -74,6 +74,7 @@ function vjsPickEpisode(d) {
   }, function() {
     var player = this;
     player.controlBar.addChild('QualitySelector');
+    player.aspectRatio(srcW+':'+srcH);
   });
 }
 
