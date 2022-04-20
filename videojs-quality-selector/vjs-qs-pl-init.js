@@ -19,6 +19,9 @@ var vjsplayers = document.getElementsByClassName('vjs-multiple-quality');
 Array.prototype.forEach.call(vjsplayers, function(el) {
   videojs(el, {}, function() {
     var player = this;
+    var vidW = this.getAttribute("data-video-width");
+    var vidH = this.getAttribute("data-video-height");
+    player.aspectRatio(vidW + ':' + vidH);
     player.controlBar.addChild('QualitySelector');
   });
 });
