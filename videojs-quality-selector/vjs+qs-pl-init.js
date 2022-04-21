@@ -63,7 +63,7 @@ function vjsPickEpisode(d) {
     let vimDvder = document.createElement('div');
     vimDvder.setAttribute('class', 'dropdown-divider current-vid-des');
     let vimDesitem = document.createElement('span');
-    vimDesitem.setAttribute('class', 'dropdown-divider current-vid-des');
+    vimDesitem.setAttribute('class', 'current-vid-des');
     vimDesitem.innerHTML = srcDes;
     vidinfoMenu.prepend(vimDvder);
     vidinfoMenu.prepend(vimDesitem);
