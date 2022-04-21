@@ -54,12 +54,17 @@ function vjsPickEpisode(d) {
     }
     vjsPlayer.dispose(); //destroy vjs player in use
   }
+  let vidinfoMenu = espList.parentNode.querySelector('figcaption .video-info-menu');
+  let curItemDes = vidinfoMenu.querySelectorAll('.current-vid-des');
+  curItemDes.forEach(curItem => {
+    curItem.remove();
+  });
   if (srcDes.length > 0) {
-  	let vimDvder = document.createElement('div');
-    vimDvder.setAttribute('class','dropdown-divider');
+    let vimDvder = document.createElement('div');
+    vimDvder.setAttribute('class', 'dropdown-divider current-vid-des');
     let vimDesitem = document.createElement('span');
+    vimDesitem.setAttribute('class', 'dropdown-divider current-vid-des');
     vimDesitem.innerHTML = srcDes;
-    let vidinfoMenu = espList.parentNode.querySelector('figcaption .video-info-menu');
     vidinfoMenu.prepend(vimDvder);
     vidinfoMenu.prepend(vimDesitem);
   }
