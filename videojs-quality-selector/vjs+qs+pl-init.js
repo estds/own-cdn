@@ -54,10 +54,15 @@ function vjsPickEpisode(d) {
     }
     vjsPlayer.dispose(); //destroy vjs player in use
   }
-
-  let vidDes = espList.parentNode.querySelector('figcaption #vid-des');
-  vidDes.innerHTML = srcDes;
-
+  if (srcDes.length > 0) {
+  	let vimDvder = document.createElement('div');
+    vimDvder.setAttribute('class','dropdown-divider');
+    let vimDesitem = document.createElement('span');
+    vimDesitem.innerHTML = srcDes;
+    let vidinfoMenu = espList.parentNode.querySelector('figcaption .video-info-menu');
+    vidinfoMenu.prepend(vimDvder);
+    vidinfoMenu.prepend(vimDesitem);
+  }
   let newVid = document.createElement('div');
   let html = '<video id="vjs-player-' + srcID + '" class="video-js vjs-yicodeplayer vjs-multiple-quality vjs-fluid" controls playsinline preload="auto" poster="' + cover + '" data-setup="{}">';
   if (srcHD.length == 0) {
@@ -65,10 +70,10 @@ function vjsPickEpisode(d) {
   } else {
     html += '<source src="' + srcSD + '" type="video/mp4" label="' + resLang.sd + '" selected="false"/><source src="' + srcHD + '" type="video/mp4" label="' + resLang.hd + '" selected="true" />';
   }
-    if (srcUHD.length > 0) {
+  if (srcUHD.length > 0) {
     html += '<source src="' + srcUHD + '" type="video/mp4" label="' + resLang.uhd + '" selected="false"/>';
-    }
-  newVid.innerHTML = html+'</video>';
+  }
+  newVid.innerHTML = html + '</video>';
   newVid = newVid.firstChild;
   vjsWrap.prepend(newVid);
   var newVJS = vjsWrap.querySelector('video');
@@ -77,7 +82,7 @@ function vjsPickEpisode(d) {
   }, function() {
     var player = this;
     player.controlBar.addChild('QualitySelector');
-    player.aspectRatio(srcW+':'+srcH);
+    player.aspectRatio(srcW + ':' + srcH);
   });
 }
 
